@@ -1,0 +1,64 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<caption id="tab_VarblsDt" />
+		<setting id="tree_data">
+		</setting>
+		<setting id="tree_dep">
+		</setting>
+		<setting id="tree_indep">
+		</setting>
+		<caption id="tab_Hyprprmt" />
+		<caption id="frm_HyprprCC" />
+		<setting id="tree_minsplit">
+		</setting>
+		<setting id="tree_maxdepth">
+		</setting>
+		<setting id="tree_cp">
+		</setting>
+		<caption id="tab_PltOptns" />
+		<caption id="frm_VslApprn" />
+		<setting id="tree_plot_type">
+		</setting>
+		<setting id="tree_plot_extra">
+		</setting>
+		<setting id="tree_plot_pal">
+		</setting>
+		<caption id="tab_Output" />
+		<caption id="frm_GrphcsSR" />
+		<setting id="tree_plot_w">
+		</setting>
+		<setting id="tree_plot_h">
+		</setting>
+		<setting id="tree_plot_res">
+		</setting>
+		<setting id="tree_save_model">
+		</setting>
+		<setting id="tree_save_plot">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

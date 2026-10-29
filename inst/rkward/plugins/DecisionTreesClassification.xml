@@ -1,0 +1,81 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="DecisionTreesClassification.js" />
+	<help file="DecisionTreesClassification.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<connect governor="tree_data.available" client="tree_vs.root" />
+	</logic>
+	<dialog label="Decision Trees (Classification &amp; Regression)">
+		<row id="row_vVDVDTDTVD">
+			<varselector id="tree_vs" />
+			<column id="clm_tVDVDTDTVD">
+				<tabbook>
+					<tab label="Variables &amp; Data" id="tab_VarblsDt">
+						<column id="clm_vrsTDTVDPL">
+							<varslot id="tree_data" label="Training Data (data.frame)" source="tree_vs" classes="data.frame" required="true" />
+							<varslot id="tree_dep" label="Target Variable (Dependent)" source="tree_vs" required="true" />
+							<varslot id="tree_indep" label="Predictors (Leave empty for all remaining)" source="tree_vs" multi="true" />
+							<stretch />
+						</column>
+					</tab>
+					<tab label="Hyperparameters" id="tab_Hyprprmt">
+						<column id="clm_fHCCHCCM20">
+							<frame label="Hyperparameters (Complexity Control)" id="frm_HyprprCC">
+								<spinbox label="Minimum observations to split a node (minsplit)" id="tree_minsplit" initial="20" min="1" max="10000" type="integer" />
+								<spinbox label="Maximum Tree Depth (maxdepth)" id="tree_maxdepth" initial="10" min="1" max="30" type="integer" />
+								<spinbox label="Complexity Parameter (cp - for pruning)" id="tree_cp" initial="0.01" min="0" max="1" />
+							</frame>
+							<stretch />
+						</column>
+					</tab>
+					<tab label="Plot Options" id="tab_PltOptns">
+						<column id="clm_fVAVAPTSL2">
+							<frame label="Visual Appearance (rpart.plot)" id="frm_VslApprn">
+								<dropdown id="tree_plot_type" label="Plot Type">
+									<option label="Standard (Labels below nodes)" value="2" checked="true" />
+									<option label="Compact (Left/Right split labels)" value="3" />
+									<option label="Detailed (Interior nodes)" value="4" />
+								</dropdown>
+								<dropdown id="tree_plot_extra" label="Extra Information in Nodes">
+									<option label="Class Probabilities &amp; Node Percentage" value="104" checked="true" />
+									<option label="Counts for each class" value="2" />
+									<option label="Just the predicted class" value="0" />
+								</dropdown>
+								<dropdown id="tree_plot_pal" label="Color Palette">
+									<option label="Red-Yellow-Green (Business)" value="RdYlGn" checked="true" />
+									<option label="Blues" value="Blues" />
+									<option label="Greens" value="Greens" />
+									<option label="Grayscale" value="Greys" />
+								</dropdown>
+							</frame>
+							<stretch />
+						</column>
+					</tab>
+					<tab label="Output" id="tab_Output">
+						<column id="clm_fGSRGSRHTM">
+							<frame label="Graphics Size &amp; Resolution" id="frm_GrphcsSR">
+								<row id="row_sHTMLPW800">
+									<spinbox label="HTML Plot Width (pixels)" id="tree_plot_w" initial="800" min="100" max="5000" type="integer" />
+									<spinbox label="HTML Plot Height (pixels)" id="tree_plot_h" initial="600" min="100" max="5000" type="integer" />
+									<spinbox label="Resolution (DPI)" id="tree_plot_res" initial="120" min="72" max="600" type="integer" />
+								</row>
+							</frame>
+							<saveobject label="Save Decision Tree Model as" checkable="true" checked="true" initial="tree_model" id="tree_save_model" />
+							<saveobject label="Save Plot as R Object" checkable="true" initial="tree_plot" id="tree_save_plot" />
+							<preview label="Preview Decision Tree Plot" id="prv_PrvwDcTP" />
+							<stretch />
+						</column>
+					</tab>
+				</tabbook>
+			</column>
+		</row>
+	</dialog>
+</document>

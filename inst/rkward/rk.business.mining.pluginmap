@@ -1,0 +1,152 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="DecisionTreesClassification"
+	id="DecisionTreesClassification_rkward"
+	po_id="DecisionTreesClassification_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<dependencies
+		R_min_version="4.0.0"
+	>
+		<package
+			name="rpart"
+		/>
+		<package
+			name="rpart.plot"
+		/>
+		<package
+			name="caret"
+		/>
+		<package
+			name="e1071"
+		/>
+		<package
+			name="pROC"
+		/>
+	</dependencies>
+	<about
+		name="rk.business.mining"
+		shortinfo="Business Analytics &amp; Data Mining: Partitioning, Decision Trees, and Classification"
+		longinfo="Business Analytics &amp; Data Mining: Partitioning, Decision Trees, and Classification"
+		version="0.0.1"
+		releasedate="2026-10-27"
+		url="https://github.com/AlfCano/rk.business.mining"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_DcsnTrsClssfctnDtPrttnnTT"
+			label="Data Partitioning (Train/Test)"
+			type="standard"
+			file="plugins/DataPartitioningTrainTest.xml"
+		>
+		</component>
+		<component
+			id="cmp_DcsnTrsClssfctnClssfKNNNB"
+			label="Classifiers (KNN &amp; Naive Bayes)"
+			type="standard"
+			file="plugins/ClassifiersKNNNaiveBayes.xml"
+		>
+		</component>
+		<component
+			id="cmp_DcsnTrsClssfctnMdlEvROCCM"
+			label="Model Evaluation (ROC &amp; CM)"
+			type="standard"
+			file="plugins/ModelEvaluationROCCM.xml"
+		>
+		</component>
+		<component
+			id="cmp_DcsnTrsClssfctnDcsnTrsCls"
+			label="Decision Trees (Classification)"
+			type="standard"
+			file="plugins/DecisionTreesClassification.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PredictiveAnalytics"
+				label="Predictive Analytics"
+			>
+				<entry
+					component="cmp_DcsnTrsClssfctnDtPrttnnTT"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PredictiveAnalytics"
+				label="Predictive Analytics"
+			>
+				<entry
+					component="cmp_DcsnTrsClssfctnClssfKNNNB"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PredictiveAnalytics"
+				label="Predictive Analytics"
+			>
+				<entry
+					component="cmp_DcsnTrsClssfctnMdlEvROCCM"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="PredictiveAnalytics"
+				label="Predictive Analytics"
+			>
+				<entry
+					component="cmp_DcsnTrsClssfctnDcsnTrsCls"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

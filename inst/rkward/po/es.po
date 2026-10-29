@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.business.mining 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 18:00+0000\n"
+"PO-Revision-Date: 2026-10-28 18:00-0600\n"
+"Last-Translator: Alfonso Cano <alfonso.cano@correo.buap.mx>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# ==========================================
+# MENÚS Y TÍTULOS PRINCIPALES
+# ==========================================
+msgid "Predictive Analytics"
+msgstr "Analítica Predictiva"
+
+msgid "Decision Trees (Classification)"
+msgstr "Árboles de Decisión (Clasificación)"
+
+msgid "Decision Trees (Classification & Regression)"
+msgstr "Árboles de Decisión (Clasificación y Regresión)"
+
+msgid "Data Partitioning (Train / Test Split)"
+msgstr "Partición de Datos (Entrenamiento / Prueba)"
+
+msgid "Other Classifiers (KNN & Naive Bayes)"
+msgstr "Otros Clasificadores (KNN y Naive Bayes)"
+
+msgid "Model Evaluation (Metrics & ROC)"
+msgstr "Evaluación del Modelo (Métricas y ROC)"
+
+# ==========================================
+# COMPONENTE: ÁRBOLES DE DECISIÓN
+# ==========================================
+msgid "Variables & Data"
+msgstr "Variables y Datos"
+
+msgid "Training Data (data.frame)"
+msgstr "Datos de Entrenamiento (data.frame)"
+
+msgid "Target Variable (Dependent)"
+msgstr "Variable Objetivo (Dependiente)"
+
+msgid "Predictors (Leave empty for all remaining)"
+msgstr "Variables Predictoras (Dejar vacío para usar el resto)"
+
+msgid "Hyperparameters"
+msgstr "Hiperparámetros"
+
+msgid "Hyperparameters (Complexity Control)"
+msgstr "Hiperparámetros (Control de Complejidad)"
+
+msgid "Minimum observations to split a node (minsplit)"
+msgstr "Observaciones mínimas para dividir un nodo (minsplit)"
+
+msgid "Maximum Tree Depth (maxdepth)"
+msgstr "Profundidad máxima del árbol (maxdepth)"
+
+msgid "Complexity Parameter (cp - for pruning)"
+msgstr "Parámetro de Complejidad (cp - para poda)"
+
+msgid "Plot Options"
+msgstr "Opciones de Gráfica"
+
+msgid "Visual Appearance (rpart.plot)"
+msgstr "Apariencia Visual (rpart.plot)"
+
+msgid "Plot Type"
+msgstr "Tipo de Gráfica"
+
+msgid "Standard (Labels below nodes)"
+msgstr "Estándar (Etiquetas bajo los nodos)"
+
+msgid "Compact (Left/Right split labels)"
+msgstr "Compacto (Etiquetas de división Izq/Der)"
+
+msgid "Extra Information in Nodes"
+msgstr "Información extra en los Nodos"
+
+msgid "Class Probabilities & Node Percentage"
+msgstr "Probabilidades de Clase y Porcentaje del Nodo"
+
+msgid "Color Palette"
+msgstr "Paleta de Colores"
+
+msgid "Red-Yellow-Green (Business)"
+msgstr "Rojo-Amarillo-Verde (Negocios)"
+
+# ==========================================
+# COMPONENTE: PARTICIÓN DE DATOS
+# ==========================================
+msgid "Dataset to Partition"
+msgstr "Conjunto de datos a particionar"
+
+msgid "Target Variable (For Stratified Sampling)"
+msgstr "Variable Objetivo (Para Muestreo Estratificado)"
+
+msgid "Percentage for Training Data"
+msgstr "Porcentaje para Datos de Entrenamiento"
+
+msgid "Set Random Seed (for reproducibility)"
+msgstr "Establecer Semilla Aleatoria (para reproducibilidad)"
+
+msgid "Export Subsets to Workspace"
+msgstr "Exportar Subconjuntos al Espacio de Trabajo"
+
+# ==========================================
+# COMPONENTE: KNN & NAIVE BAYES
+# ==========================================
+msgid "Classifier Algorithm"
+msgstr "Algoritmo de Clasificación"
+
+msgid "K-Nearest Neighbors (KNN)"
+msgstr "K-Vecinos Más Cercanos (KNN)"
+
+msgid "Number of Neighbors (k)"
+msgstr "Número de Vecinos (k)"
+
+msgid "Standardize (Scale) numeric data?"
+msgstr "¿Estandarizar (Escalar) datos numéricos?"
+
+# ==========================================
+# COMPONENTE: EVALUACIÓN (ROC Y MATRIZ)
+# ==========================================
+msgid "Testing Dataset (e.g. data_test)"
+msgstr "Conjunto de Datos de Prueba (ej. data_test)"
+
+msgid "Actual Target Variable in Test Data"
+msgstr "Variable Objetivo Real (en datos de prueba)"
+
+msgid "Model Object Name (from Workspace)"
+msgstr "Nombre del Objeto del Modelo"
+
+msgid "Generate Confusion Matrix & Metrics (Accuracy, Sensitivity, etc.)"
+msgstr "Generar Matriz de Confusión y Métricas Clave"
+
+msgid "Generate ROC Curve and calculate AUC"
+msgstr "Generar Curva ROC y calcular AUC"
+
+msgid "Preview ROC Curve"
+msgstr "Previsualizar Curva ROC"
+
+# ==========================================
+# OPCIONES GENERALES Y SALIDAS
+# ==========================================
+msgid "HTML Plot Width (pixels)"
+msgstr "Ancho del Gráfico HTML (píxeles)"
+
+msgid "HTML Plot Height (pixels)"
+msgstr "Alto del Gráfico HTML (píxeles)"
+
+msgid "Resolution (DPI)"
+msgstr "Resolución (DPI)"
+
+msgid "Save Model as"
+msgstr "Guardar Modelo como"
+
+msgid "Save Plot as R Object"
+msgstr "Guardar Gráfico como Objeto en R"

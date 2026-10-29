@@ -1,0 +1,36 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="DataPartitioningTrainTest.js" />
+	<help file="DataPartitioningTrainTest.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<connect governor="part_data.available" client="part_vs.root" />
+		<connect governor="part_seed_chk.state" client="part_seed_val.enabled" />
+	</logic>
+	<dialog label="Data Partitioning (Train / Test Split)">
+		<row id="row_vDPTVFSSPT">
+			<varselector id="part_vs" />
+			<column id="clm_vDPTVFSSPT">
+				<varslot id="part_data" label="Dataset to Partition" source="part_vs" classes="data.frame" required="true" />
+				<varslot id="part_target" label="Target Variable (For Stratified Sampling)" source="part_vs" required="true" />
+				<spinbox label="Percentage for Training Data" id="part_prop" initial="70" min="10" max="95" type="integer" />
+				<frame label="Reproducibility" id="frm_Rprdcblt">
+					<checkbox id="part_seed_chk" label="Set Random Seed (for reproducibility)" value="TRUE" checked="true" />
+					<spinbox label="Seed Value" id="part_seed_val" initial="12345" min="1" max="999999" type="integer" />
+				</frame>
+				<frame label="Export Subsets to Workspace" id="frm_ExprtSbW">
+					<saveobject label="Save Training Data as" checkable="true" checked="true" initial="data_train" id="part_save_train" />
+					<saveobject label="Save Testing Data as" checkable="true" checked="true" initial="data_test" id="part_save_test" />
+				</frame>
+				<stretch />
+			</column>
+		</row>
+	</dialog>
+</document>

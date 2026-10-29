@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.forecast 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-27 12:00-0600\n"
+"PO-Revision-Date: 2026-10-27 13:40-0600\n"
+"Last-Translator: Alfonso Cano <alfonso.cano@correo.buap.mx>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+
+msgid "Data Frame"
+msgstr "Datenrahmen (Data Frame)"
+
+msgid "Target Variable to Forecast (Numeric)"
+msgstr "Zu prognostizierende Zielvariable (Numerisch)"
+
+msgid "Data Frequency (Seasonality)"
+msgstr "Datenfrequenz (Saisonalität)"
+
+msgid "Monthly (12)"
+msgstr "Monatlich (12)"
+
+msgid "Quarterly (4)"
+msgstr "Vierteljährlich (4)"
+
+msgid "Yearly (1)"
+msgstr "Jährlich (1)"
+
+msgid "Weekly (52)"
+msgstr "Wöchentlich (52)"
+
+msgid "Start Year (e.g., 2018)"
+msgstr "Startjahr (z. B. 2018)"
+
+msgid "Start Period (e.g., 1 for Jan/Q1)"
+msgstr "Startperiode (z. B. 1 für Jan/Q1)"
+
+msgid "Time Series Structure"
+msgstr "Struktur der Zeitreihe"
+
+msgid "Smoothing Method"
+msgstr "Glättungsmethode"
+
+msgid "Auto-detect best model (ETS)"
+msgstr "Bestes Modell automatisch erkennen (ETS)"
+
+msgid "Simple Exponential Smoothing (No Trend, No Seasonality)"
+msgstr "Einfache exponentielle Glättung (Kein Trend, keine Saisonalität)"
+
+msgid "Holt's Linear Trend (Trend, No Seasonality)"
+msgstr "Holts linearer Trend (Trend, keine Saisonalität)"
+
+msgid "Holt-Winters Additive (Trend & Seasonality)"
+msgstr "Holt-Winters Additiv (Trend & Saisonalität)"
+
+msgid "Holt-Winters Multiplicative (Trend & Seasonality)"
+msgstr "Holt-Winters Multiplikativ (Trend & Saisonalität)"
+
+msgid "Periods to forecast (h)"
+msgstr "Zu prognostizierende Perioden (h)"
+
+msgid "Model & Horizon"
+msgstr "Modell & Horizont"
+
+msgid "Save forecast object as"
+msgstr "Prognoseobjekt speichern als"
+
+msgid "Plot Theme (ggplot2)"
+msgstr "Diagramm-Design (ggplot2)"
+
+msgid "Minimal (Clean business look)"
+msgstr "Minimalistisch (Sauberer Business-Look)"
+
+msgid "Classic (Scientific)"
+msgstr "Klassisch (Wissenschaftlich)"
+
+msgid "Black & White (Grid)"
+msgstr "Schwarz-Weiß (Raster)"
+
+msgid "Main Title (Leave empty for default)"
+msgstr "Haupttitel (Für Standard leer lassen)"
+
+msgid "X-Axis Label (e.g., Time or Years)"
+msgstr "Beschriftung X-Achse (z. B. Zeit oder Jahre)"
+
+msgid "Y-Axis Label"
+msgstr "Beschriftung Y-Achse"
+
+msgid "Plot Customization"
+msgstr "Diagramm-Anpassung"
+
+msgid "HTML Plot Width (pixels)"
+msgstr "HTML-Diagrammbreite (Pixel)"
+
+msgid "HTML Plot Height (pixels)"
+msgstr "HTML-Diagrammhöhe (Pixel)"
+
+msgid "Resolution (DPI)"
+msgstr "Auflösung (DPI)"
+
+msgid "HTML Graphics Size & Resolution"
+msgstr "HTML-Grafikgröße & Auflösung"
+
+msgid "Save Plot as R Object (Workspace)"
+msgstr "Diagramm als R-Objekt speichern (Arbeitsbereich)"
+
+msgid "Save Plot Object"
+msgstr "Diagramm-Objekt speichern"
+
+msgid "Data & Structure"
+msgstr "Daten & Struktur"
+
+msgid "Model Selection"
+msgstr "Modellauswahl"
+
+msgid "Plot Options"
+msgstr "Diagrammoptionen"
+
+msgid "Output"
+msgstr "Ausgabe"
+
+msgid "Save Forecast to Workspace"
+msgstr "Prognose im Arbeitsbereich speichern"
+
+msgid "Preview Forecast Plot"
+msgstr "Vorschau des Prognosediagramms"
+
+msgid "Exponential Smoothing (Holt-Winters)"
+msgstr "Exponentielle Glättung (Holt-Winters)"
+
+msgid "Data Frequency"
+msgstr "Datenfrequenz"
+
+msgid "Start Year"
+msgstr "Startjahr"
+
+msgid "Start Period"
+msgstr "Startperiode"
+
+msgid "Baseline Method"
+msgstr "Referenzmethode (Baseline)"
+
+msgid "Naive (Last observation carries forward)"
+msgstr "Naiv (Letzte Beobachtung wird fortgeschrieben)"
+
+msgid "Seasonal Naive (Last season carries forward)"
+msgstr "Saisonal Naiv (Letzte Saison wird fortgeschrieben)"
+
+msgid "Mean Forecast (Average of all history)"
+msgstr "Mittelwertprognose (Durchschnitt der gesamten Historie)"
+
+msgid "Random Walk with Drift (Trend based on first/last)"
+msgstr "Random Walk mit Drift (Trend basierend auf Anfang/Ende)"
+
+msgid "Model Configuration"
+msgstr "Modellkonfiguration"
+
+msgid "Baseline Models (Naive & Mean)"
+msgstr "Referenzmodelle (Naiv & Mittelwert)"
+
+msgid "Select a Forecast Object from Workspace"
+msgstr "Wählen Sie ein Prognoseobjekt aus dem Arbeitsbereich"
+
+msgid "X-Axis Label (Leave empty for default)"
+msgstr "Beschriftung X-Achse (Für Standard leer lassen)"
+
+msgid "Y-Axis Label (Leave empty for default)"
+msgstr "Beschriftung Y-Achse (Für Standard leer lassen)"
+
+msgid "Save ggplot Object as"
+msgstr "ggplot-Objekt speichern als"
+
+msgid "Preview Evaluation Plot"
+msgstr "Vorschau des Bewertungsdiagramms"
+
+msgid "Model & Theme"
+msgstr "Modell & Design"
+
+msgid "Model to Evaluate"
+msgstr "Zu bewertendes Modell"
+
+msgid "Visualization Settings"
+msgstr "Visualisierungseinstellungen"
+
+msgid "Evaluate Accuracy (MAPE, RMSE)"
+msgstr "Genauigkeit bewerten (MAPE, RMSE)"
+
+msgid "Time Series"
+msgstr "Zeitreihen"

@@ -1,0 +1,37 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="ClassifiersKNNNaiveBayes.js" />
+	<help file="ClassifiersKNNNaiveBayes.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<connect governor="cls_data.available" client="cls_vs.root" />
+		<convert id="cond_is_knn" sources="cls_type" mode="equals" standard="knn" />
+		<connect governor="cond_is_knn" client="frm_knn.visible" />
+	</logic>
+	<dialog label="Other Classifiers (KNN &amp; Naive Bayes)">
+		<row id="row_vTDTVPECAK">
+			<varselector id="cls_vs" />
+			<column id="clm_vTDTVPECAK">
+				<varslot id="cls_data" label="Training Data" source="cls_vs" classes="data.frame" required="true" />
+				<varslot id="cls_dep" label="Target Variable" source="cls_vs" required="true" />
+				<varslot id="cls_indep" label="Predictors (Empty for all)" source="cls_vs" multi="true" />
+				<radio id="cls_type" label="Classifier Algorithm">
+					<option label="K-Nearest Neighbors (KNN)" value="knn" checked="true" />
+					<option label="Naive Bayes" value="nb" />
+				</radio>
+				<frame label="KNN Options" id="frm_knn">
+					<spinbox label="Number of Neighbors (k)" id="knn_k" initial="5" min="1" max="100" type="integer" />
+					<checkbox id="knn_scale" label="Standardize (Scale) numeric data?" value="TRUE" checked="true" />
+				</frame>
+				<saveobject label="Save Model as" checkable="true" checked="true" initial="my_model" id="cls_save_model" />
+			</column>
+		</row>
+	</dialog>
+</document>

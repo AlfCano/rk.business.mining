@@ -1,0 +1,19 @@
+Package: rk.business.mining
+Type: Package
+Title: Business Analytics & Data Mining: Partitioning, Decision Trees,
+        and Classification
+Version: 0.0.1
+Date: 2026-10-27
+Author: Alfonso Cano
+Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
+Depends: R (>= 4.0.0)
+Suggests: rpart, rpart.plot, caret, e1071, pROC
+Enhances: rkward
+Description: Business Analytics & Data Mining: Partitioning, Decision
+        Trees, and Classification
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.business.mining
+Authors@R: person(given="Alfonso", family="Cano",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

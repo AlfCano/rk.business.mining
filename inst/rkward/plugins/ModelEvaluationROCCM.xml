@@ -1,0 +1,36 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="ModelEvaluationROCCM.js" />
+	<help file="ModelEvaluationROCCM.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<connect governor="eval_data.available" client="eval_vs.root" />
+		<convert id="cond_roc" sources="eval_chk_roc" mode="equals" standard="TRUE" />
+		<connect governor="cond_roc" client="frm_ROCPltSz.visible" />
+	</logic>
+	<dialog label="Model Evaluation (Metrics &amp; ROC)">
+		<row id="row_vMONWTDATV">
+			<varselector id="eval_vs" />
+			<column id="clm_iMONWTDATV">
+				<input label="Model Object Name (from Workspace)" id="eval_model" initial="tree_model" required="true" />
+				<varslot id="eval_data" label="Testing Dataset (e.g. data_test)" source="eval_vs" classes="data.frame" required="true" />
+				<varslot id="eval_target" label="Actual Target Variable in Test Data" source="eval_vs" required="true" />
+				<checkbox id="eval_chk_cm" label="Generate Confusion Matrix &amp; Metrics (Accuracy, Sensitivity, etc.)" value="TRUE" checked="true" />
+				<checkbox id="eval_chk_roc" label="Generate ROC Curve and calculate AUC" value="TRUE" checked="true" />
+				<frame label="ROC Plot Size" id="frm_ROCPltSz">
+					<spinbox label="ROC Plot Width (pixels)" id="eval_plot_w" initial="800" min="100" max="2000" type="integer" />
+					<spinbox label="ROC Plot Height (pixels)" id="eval_plot_h" initial="800" min="100" max="2000" type="integer" />
+				</frame>
+				<preview label="Preview ROC Curve" id="prv_PrvwROCC" />
+				<stretch />
+			</column>
+		</row>
+	</dialog>
+</document>
